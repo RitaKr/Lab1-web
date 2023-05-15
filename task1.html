@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Language" content="en, ua">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab1 task1 Kryzhanivska</title>
+</head>
+
+<body>
+    <main>
+        <h1>Adding a teacher</h1>
+        <h2>Please, fill this form to add a new teacher</h2>
+
+        <form id="add-teacher">
+            <section class="full-name-section">
+                <label for="full-name">Full name:</label>
+                <span class="required-sign" style="color: red">*</span><br />
+                <input type="text" name="full-name" size="30" placeholder="e.g. Petrenko Petro Petrovych" required />
+            </section>
+
+            <section class="sex-section">
+                <label for="sex">Sex:</label>
+                <span class="required-sign" style="color: red">*</span><br />
+                <select name="sex" required>
+                    <option value="">Select sex...</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Non-binary">Non-binary</option>
+                    <option value="Other">Other</option>
+                </select>
+            </section>
+
+            <section class="birth-date-section">
+                <label for="birth-date">Birth date:</label>
+                <span class="required-sign" style="color: red">*</span><br />
+                <input type="date" name="birth-date" max="2007-01-01" required />
+            </section>
+
+            <section class="email-section">
+                <label for="email">Email:</label>
+                <span class="required-sign" style="color: red">*</span><br />
+                <input type="email" name="email" size="30" placeholder="e.g. example@example.com" required />
+            </section>
+
+            <section class="phone-section">
+                <label for="phone">Phone number:</label>
+                <span class="required-sign" style="color: red">*</span><br />
+                <input type="tel" name="phone" value="+380" pattern="\+380\d{9}" size="30"
+                    placeholder="+380 00 000 0000" required />
+            </section>
+
+
+            <section class="preferred-bg-color-section">
+                <label for="preferred-bg-color">Preferred background color:</label>
+                <span class="required-sign" style="color: red">*</span><br />
+                <input type="color" name="preferred-bg-color" required />
+            </section>
+
+            <section class="country-section">
+                <label for="country">Country:</label>
+                <span class="required-sign" style="color: red">*</span><br />
+                <input type="text" name="country" size="30" value="Ukraine" placeholder="Ukraine" required />
+            </section>
+
+            <section class="city-section">
+                <label for="city">City:</label>
+                <span class="required-sign" style="color: red">*</span><br />
+                <input type="text" name="city" size="30" placeholder="e.g. Kyiv" required />
+            </section>
+
+            <section class="comment-section">
+                <label for="comment">Any comments:</label><br />
+                <textarea name="comment" rows="5" cols="30" placeholder="Write your comment here"></textarea>
+            </section>
+
+            <input type="submit" value="Submit" aria-label="Submit">
+        </form>
+
+    </main>
+
+
+</body>
+
+</html>
